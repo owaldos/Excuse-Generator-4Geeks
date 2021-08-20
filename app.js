@@ -5,11 +5,12 @@ let when = ['before the class','right on time','when I finished','during my lunc
 
 
 window.onload=()=>{
-    let rWho = Math.floor(Math.random()*4),
-        rAction= Math.floor(Math.random()*4),
-        rWhat=Math.floor(Math.random()*3),
-        rWhen= Math.floor(Math.random()*5);
+    let rWho = Math.floor(Math.random()*who.length),
+        rAction= Math.floor(Math.random()*action.length),
+        rWhat=Math.floor(Math.random()*what.length),
+        rWhen= Math.floor(Math.random()*when.length);
     let h1= document.querySelector('h1')
 
     h1.textContent=`${who[rWho]} ${action[rAction]} ${what[rWhat]} ${when[rWhen]}`
 }
+
